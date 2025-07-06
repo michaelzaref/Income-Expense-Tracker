@@ -22,5 +22,5 @@ A personal finance tracker app built using HTML, CSS, and JavaScript.
 - [SheetJS (xlsx)](https://sheetjs.com/)
 
 ---
-
-💡 *This is a personal project built for learning and self-use.*
+## 📦 live demo
+https://income-expense-tracker.wuaze.com/
