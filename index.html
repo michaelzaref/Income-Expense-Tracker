@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Income & Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h3>Entries</h3>
+      <ul id="entries"></ul>
+    </div>
+
+    <div class="main">
+      <h1>Income & Expense Tracker</h1>
+
+      <div class="form-group">
+        <input type="text" id="description" placeholder="Description">
+        <input type="number" id="amount" placeholder="Amount">
+        <select id="type">
+          <option value="income">Income</option>
+          <option value="expense">Expense</option>
+        </select>
+        <button onclick="addEntry()">Add Entry</button>
+      </div>
+
+      <div class="summary">
+        <p>Total Income: <span id="income">0</span></p>
+        <p>Total Expenses: <span id="expense">0</span></p>
+        <p>Balance: <span id="balance">0</span></p>
+      </div>
+
+      <div class="buttons">
+        <button onclick="downloadExcel()">Download Excel</button>
+        <input type="file" id="excelFile" onchange="importExcel(event)">
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
